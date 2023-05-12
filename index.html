@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" href="assets/liberam_blue_gradient.png" sizes="32x32">
+    <title>Escalada Foz</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+ 
+   <style>
+    html, body, #map {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+/* Quitar la bounday negra al clicar */
+        g:focus {
+            outline: none;
+        }
+
+        path:focus {
+        outline: none;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<div id="attributeContainer">
+    <label for="attributeSelector">Seleccionar atributo:</label>
+    <select id="attributeSelector"></select>
+    <button id="zoomButton">Zoom</button>
+  </div>
+  
+        
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>        
+<script src="js/leaflet.wms.js"></script>
+<script src="js/basemaps.js"></script>
+<script src="js/main.js"></script>
+
+      
+    </body>
+</html>
